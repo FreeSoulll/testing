@@ -31,12 +31,12 @@ h1, h2, h3 {
 	margin: 0;
 }
 
-.header_block {
+.text_block {
 	margin-bottom: 30px;
 	padding-top: 30px;
 }
 
-.header_block .header_text {
+.text_block .header_text {
 	text-align: center;
 }
 .gallery_block {
@@ -89,21 +89,23 @@ h1, h2, h3 {
 	flex-wrap: wrap;
 	justify-content: center;
 	height: 100%;
-	height: 100%;
     overflow-y: overlay;
     background-color: #dddd
 }
 
-.gallery_block .container .gallery_items .small_img {
+.gallery_block .container .gallery_items .container_small_img {
 	width: 31%;
 	margin: 0.8%;
 	cursor: pointer;
+}
+.gallery_block .container .gallery_items .small_img {
+	width: 100%;
 }
 
 .gallery_block .container .gallery_items .big_img {
 	display: none;
 }
-.gallery_block .container .gallery_items .show {
+.gallery_block .container .show {
 	display: block;
 	position: absolute;
 	top: 50%;

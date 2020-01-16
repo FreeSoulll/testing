@@ -35,11 +35,11 @@ var album = {
         });  
         }) )
         },
-    title:  function header(){  fetch('https://jsonplaceholder.typicode.com/users/1/albums')
+    title:  function header(){  fetch('https://jsonplaceholder.typicode.com/albums/' + this.id)
             .then(response => response.json())
-            .then(json => document.querySelector(DOMstrings.headerBlock).textContent = json[this.id-1].title)
+            .then(json => document.querySelector(DOMstrings.headerBlock).textContent = json.title)
         },
-    albumLength:  function length(){  fetch('https://jsonplaceholder.typicode.com/users/1/albums')
+    albumLength:  function length(){  fetch('https://jsonplaceholder.typicode.com/albums')
             .then(response => response.json())
             .then(json => {
                 if(this.id > 1){
@@ -54,10 +54,6 @@ var album = {
                 }
             }
                 )
-        },
-    createImg: function header(){  fetch('https://jsonplaceholder.typicode.com/photos?albumId=' + this.id)
-            .then(response => response.json())
-            .then(json => document.querySelector(DOMstrings.headerBlock).textContent = json[this.id-1].title)
         },
 };
 function init() {

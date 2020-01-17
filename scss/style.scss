@@ -106,6 +106,7 @@ h1, h2, h3 {
 .gallery_block .container .gallery_items .big_img {
 	display: none;
 }
+
 .gallery_block .container .show {
 	display: block;
 	position: absolute;
@@ -117,7 +118,7 @@ h1, h2, h3 {
 	z-index: 3;
 }
 
-.gallery_block .show{
+.gallery_block .show {
 	display: block;
 }
 
@@ -133,7 +134,7 @@ h1, h2, h3 {
 }
 
 @media (max-width: 450px) {
-	.gallery_block .button_block{
+	.gallery_block .button_block {
 		width: 10%;
 	}
 	.gallery_block .container .gallery_items .container_small_img {
